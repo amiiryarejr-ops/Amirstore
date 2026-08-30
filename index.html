@@ -28,7 +28,7 @@
         <div class="header-actions">
             <a href="#" class="header-icon">ðŸ”</a>
             <a href="#" class="header-icon">ðŸ‘¤</a>
-            <a href="#" class="header-icon">
+            <a href="#" class="header-icon" id="cartIconBtn">
                 ðŸ›’
                 <span class="cart-count" id="cartCount">0</span>
             </a>
@@ -260,6 +260,45 @@
     </div>
 </footer>
 
+<!-- ================= CHECKOUT MODAL ================= -->
+<div class="checkout-overlay" id="checkoutOverlay">
+    <div class="checkout-modal">
+        <button class="checkout-close" id="checkoutClose">&times;</button>
+        <h3>Dhammaystir Dalabkaaga</h3>
+        <p class="checkout-sub">Buuxi macluumaadkaaga, waan kula soo xiriiri doonaa si aan alaabta kuugu dhiibno.</p>
+
+        <div id="checkoutCartSummary" class="checkout-cart-summary"></div>
+
+        <form id="checkoutForm">
+            <label>Magaca Buuxa</label>
+            <input type="text" name="name" placeholder="Tusaale: Ayub Cabdi" required>
+
+            <label>Lambarka Telefoonka</label>
+            <input type="tel" name="phone" placeholder="Tusaale: 0712345678" required>
+
+            <label>Magaalada / Degmada</label>
+            <input type="text" name="location" placeholder="Tusaale: Nairobi, Eastleigh" required>
+
+            <label>Fadhiga / Cinwaanka Faahfaahsan (ikhtiyaari)</label>
+            <input type="text" name="address" placeholder="Tusaale: Building, Floor, Landmark">
+
+            <label>Fariin Dheeraad ah (ikhtiyaari)</label>
+            <textarea name="message" rows="2" placeholder="Wax faahfaahin dheeraad ah..."></textarea>
+
+            <button type="submit" class="btn-primary checkout-submit" id="checkoutSubmitBtn">Dir Dalabka âœ…</button>
+            <p class="checkout-note">Kadib marka aad dirto, waxaan kula soo xiriiri doonaa taleefan si aan u xaqiijino dalabka.</p>
+        </form>
+
+        <div class="checkout-success" id="checkoutSuccess">
+            <div class="success-icon">âœ…</div>
+            <h4>Dalabkaaga Waa La Helay!</h4>
+            <p>Mahadsanid! Waxaan kula soo xiriiri doonaa dhawaan si aan u xaqiijino oo aan alaabta kuugu dhiibno.</p>
+            <button class="btn-secondary" id="checkoutDone" style="color:var(--dark); border-color:var(--dark);">Xir</button>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/checkout-config.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
