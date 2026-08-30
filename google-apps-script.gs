@@ -26,7 +26,7 @@
  */
 
 // ================= BEDDEL TAN EMAIL-KAAGA =================
-const EMAIL_TO = "your-email@gmail.com"; // <-- KU BEDDEL EMAIL-KAAGA DHABTA AH
+const EMAIL_TO = "ayuubluisapdy@gmail.com"; // <-- KU BEDDEL EMAIL-KAAGA DHABTA AH
 
 function doPost(e) {
   try {
